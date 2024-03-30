@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-scrollbar::-webkit-scrollbar {
+    height: 4px; /* Height of the scrollbar */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 2px; 
+  }
+  
+  /* For Firefox */
+  .custom-scrollbar {
+    scrollbar-color: grey transparent; /* Thumb and track color */
+    scrollbar-width: thin; /* Width of the scrollbar */
+  }
