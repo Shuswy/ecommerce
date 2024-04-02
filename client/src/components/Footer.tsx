@@ -42,7 +42,7 @@ const Footer = () => {
                         <div><PiMapPinFill /></div>
                         <p>Bulgaria</p>
                     </div>
-                    <p>© 2024 Nike, Inc. All rights reserved</p>
+                    <p>© 2024 Mike, Inc. All rights reserved</p>
                 </div>
                 <div className='flex justify-start md:justify-center space-x-4'>
                     <p className='hover:text-white cursor-pointer'>Privacy & Cookie Policy</p>

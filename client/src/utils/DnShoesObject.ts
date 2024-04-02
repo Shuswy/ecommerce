@@ -31,7 +31,7 @@ const DnPromoObject: DnShoesArray = {
             id: 0,
             cover: dnshoe1,
             info: {
-                title: 'Nike Air Max Dn',
+                title: 'Mike Air Max Dn',
                 category: "Men's Shoes",
                 price: 329.99
             }
@@ -40,7 +40,7 @@ const DnPromoObject: DnShoesArray = {
             id: 1,
             cover: dnshoe2,
             info: {
-                title: 'Nike Air Max Dn',
+                title: 'Mike Air Max Dn',
                 category: "Shoes",
                 price: 329.99
             }
@@ -49,7 +49,7 @@ const DnPromoObject: DnShoesArray = {
             id: 2,
             cover: dnshoe3,
             info: {
-                title: 'Nike Air Max Dn',
+                title: 'Mike Air Max Dn',
                 category: "Kid's Shoes",
                 price: 259.99
             }
@@ -58,7 +58,7 @@ const DnPromoObject: DnShoesArray = {
             id: 3,
             cover: dnshoe4,
             info: {
-                title: 'Nike Air Max Dn',
+                title: 'Mike Air Max Dn',
                 category: "Shoes",
                 price: 329.99
             }
@@ -67,7 +67,7 @@ const DnPromoObject: DnShoesArray = {
             id: 4,
             cover: dnshoe5,
             info: {
-                title: 'Nike Air Max Dn',
+                title: 'Mike Air Max Dn',
                 category: "Shoes",
                 price: 329.99
             }
@@ -76,7 +76,7 @@ const DnPromoObject: DnShoesArray = {
             id: 5,
             cover: dnshoe6,
             info: {
-                title: 'Nike Air Max Dn',
+                title: 'Mike Air Max Dn',
                 category: "Women's Shoes",
                 price: 329.99
             }
@@ -85,7 +85,7 @@ const DnPromoObject: DnShoesArray = {
             id: 6,
             cover: dnshoe7,
             info: {
-                title: 'Nike Air Max Dn',
+                title: 'Mike Air Max Dn',
                 category: "Kids's Shoes",
                 price: 259.99
             }
@@ -94,7 +94,7 @@ const DnPromoObject: DnShoesArray = {
             id: 7,
             cover: dnshoe8,
             info: {
-                title: 'Nike Air Max Dn',
+                title: 'Mike Air Max Dn',
                 category: "Shoes",
                 price: 329.99
             }
@@ -103,7 +103,7 @@ const DnPromoObject: DnShoesArray = {
             id: 8,
             cover: dnshoe9,
             info: {
-                title: 'Nike Air Max Dn',
+                title: 'Mike Air Max Dn',
                 category: "Kid's Shoes",
                 price: 259.99
             }
@@ -112,7 +112,7 @@ const DnPromoObject: DnShoesArray = {
             id: 9,
             cover: dnshoe10,
             info: {
-                title: 'Nike Air Max Dn',
+                title: 'Mike Air Max Dn',
                 category: "Shoes",
                 price: 329.99
             }
