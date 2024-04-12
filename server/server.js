@@ -1,13 +1,23 @@
 const express = require('express')
+const cors = require('cors')
 const mongoose = require('mongoose')
 const TestModel = require('./models/Test-model')
 const UserModel = require('./models/UserModel')
 const bcrypt = require('bcrypt')
+const ShoeModel = require('./models/ShoeModel')
 
 const app = express()
 const PORT = process.env.PORT || 3000
 
 app.use(express.json())
+app.use(cors())
+
+app.use(express.static('public'))
+
+app.use((err, req, res, next) => {
+    console.log(err.stack)
+    res.status(500).json({error: 'Neshto sa iba!'})
+})
 
 const mongoURL = 'mongodb://localhost:27017/Mike'
 
@@ -22,9 +32,9 @@ app.get('/', (req, res) => {
 app.get('/users', async (req, res) => {
     try {
         const users = await UserModel.find()
-        req.json(users).status(200).send('Success')
+        req.status(200).json(users)
     } catch (err) {
-        res.status(400).send(err)
+        res.status(400).json({message: err.message})
     }
 })
 
@@ -55,13 +65,22 @@ app.post('/users', async (req, res) => {
     }
 })
 
-app.post('/testmodel', async (req, res) => {
+app.get('/shoes', async (req, res) => {
     try {
-        const newTestModel = new TestModel(req.body)
-        await newTestModel.save()
-        res.status(201).send(newTestModel)
+        const shoes = await ShoeModel.find()
+        res.status(200).json(shoes)
     } catch (err) {
-        res.status(400).send(err)
+        res.status(400).json({message: err.message})
+    }
+})
+
+app.post('/shoes', async (req, res) => {
+    try {
+        const newShoe = new ShoeModel(req.body)
+        await newShoe.save()
+        res.status(201).send('Success')
+    } catch (error) {
+        res.status(400).json({message: err.message})
     }
 })
 
