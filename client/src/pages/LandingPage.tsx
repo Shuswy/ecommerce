@@ -10,13 +10,13 @@ import Footer from '../components/Footer'
 const LandingPage = () => {
     return (
         <div className='overflowhidden'>
-            <Navbar />
+            {/* <Navbar /> */}
             <HeroLandingPage />
             <NewlyAddedPromo />
             <DnPromo />
             <CarouselContainer />
             <CategoryCarousel />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
